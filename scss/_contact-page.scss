@@ -1,0 +1,28 @@
+// contact page main: mobile first
+.contact-main-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 19.5rem;
+    background-color: $white;
+    border-left: solid 0.25rem $border;
+    border-top: solid 0.25rem $border;
+    border-right: solid 0.25rem $border;
+    color: $blue;
+    .contact-image{
+        width: calc(35.2rem*0.75);
+        height: calc(44rem*0.75);
+    }
+}
+.no-border{
+    border-top: 0;
+}
+
+// contact page main: medium breakpoint
+@include media(medium) {
+    .contact-main-section{
+        .contact-image{
+            width: calc(35.2rem*1);
+            height: calc(44rem*1);
+        }
+    }
+}

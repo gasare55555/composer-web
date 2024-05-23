@@ -1,0 +1,55 @@
+// sizes
+.size-1 {
+    font-size: 4.778rem;
+}
+.size-2 {
+    font-size: 3.981rem;
+}
+.size-4 {
+    font-size: 2.765rem;
+}
+.size-5 {
+    font-size: 2.304rem;
+}
+.size-6 {
+    font-size: 1.92rem;
+}
+.size-p {
+    font-size: 1.6rem;
+}
+
+// roboto sytles
+.roboto-200 {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+.roboto-300 {
+    @extend .roboto-200;
+    font-weight: 300;
+}
+.roboto-400 {
+    @extend .roboto-200;
+    font-weight: 400
+}
+.roboto-500 {
+    @extend .roboto-200; 
+    font-weight: 500;  
+}
+
+// noto sans styles
+.notosans-100 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.notosans-150{
+    @extend .notosans-100;
+    font-weight: 150;
+}
+.notosans-500 {
+    @extend .notosans-100;
+    font-weight: 500;
+}

@@ -1,0 +1,33 @@
+// media queries
+@mixin media($breakpoint) {
+    @if $breakpoint == medium {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint == small {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+    @if $breakpoint == font-size4 {
+        @media (max-width: 456px) {
+            @content;
+        }
+    }
+    @if $breakpoint == font-size3 {
+        @media (max-width: 420px) {
+            @content;
+        }
+    }
+    @if $breakpoint == font-size2 {
+        @media (max-width: 386px) {
+            @content;
+        }
+    }
+    @if $breakpoint == font-size1 {
+        @media (max-width: 384px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+// albums page main: mobile first
+.albums-main {
+    position: relative;
+    background-color: $purple;
+    margin: 0 0;
+    .row{
+        .title-container {
+            padding: 13.3rem 0;
+            .title {
+                color: $white;
+                text-align: center;
+                letter-spacing: 0.95rem;
+            }
+        }
+    }
+    .album-row {
+        display: grid;
+        justify-content: center;
+        .album-container {
+            width: fit-content;
+            padding-bottom: 9.5rem;
+            .album1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30.65rem;
+                height: 30.65rem;
+                background-image: url("../assets/dawn-landscape.png");
+                background-size: cover;
+                .label-album1 {
+                    color: $white;
+                    letter-spacing: 0.3rem;
+                    text-align: center;
+                    background-color: $transparent-background;
+                    padding: 1rem 1.9rem;
+                    border-radius: 5rem;
+                    &:hover{
+                        color: $blue;
+                        font-weight: 900;
+                        background-color: $white;
+                    }
+                }
+            }
+            .album2 {
+                @extend .album1;
+                background-image: url("../assets/into-the-night.jpg");
+                .label-album2 {
+                    @extend .label-album1;
+                    letter-spacing: 0.3rem;
+                    padding: 0.8rem 2.4rem;
+                    padding-top: 1rem;
+                    border-radius: 4rem;
+                    &:hover {
+                        color: $blue;
+                        font-weight: 900;
+                        background-color: $white;
+                    }
+                }
+            }
+            .album3 {
+                @extend .album1;
+                background-image: url("../assets/love.jpg");
+                .label-album3 {
+                    @extend .label-album1;
+                    letter-spacing: 0.4rem;
+                    padding: 1rem 1.9rem;
+                    border-radius: 5rem;
+                    &:hover {
+                        color: $blue;
+                        font-weight: 900;
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+        .album-container-last {
+            width: fit-content;
+            padding-bottom: 23.8rem;
+            .album4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30.65rem;
+                height: 30.65rem;
+                background-image: url("../assets/spring-flowers.jpg");
+                background-size: cover;
+                .label-album4 {
+                    color: white;
+                    letter-spacing: 0.3rem;
+                    text-align: center;  
+                    background-color: $transparent-background;
+                    padding: 1rem 1.9rem;
+                    border-radius: 5rem;
+                    &:hover {
+                        color: $blue;
+                        font-weight: 900;
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// albums page main: small breakpoint
+@include media(small) {
+    .albums-main{
+        .album-row{
+            .album-container{
+                .album1 {
+                    width: 40.65rem;
+                    height: 40.65rem;
+                }
+                .album2 {
+                    width: 40.65rem;
+                    height: 40.65rem;
+                }
+                .album3 {
+                    width: 40.65rem;
+                    height: 40.65rem;
+                }             
+            }
+            .album-container-last{
+                .album4 {
+                    width: 40.65rem;
+                    height: 40.65rem;
+                }
+            }
+        }
+    }   
+}
+
+// albums page main: medium breakpoint
+@include media(medium) {
+    .albums-main {
+        .album-row {
+            display: grid;
+            grid-template-columns: 1fr auto 9.5rem auto 1fr;  
+            .album-container {
+                width: fit-content;
+                padding-bottom: 9.5rem;
+            }   
+        }
+    }
+}

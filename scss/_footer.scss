@@ -1,0 +1,310 @@
+// footer for small sizes
+.contact-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92.8rem;
+    background-color: $white;
+    border: solid 0.25rem $border;
+    color: $blue;
+    .footer-container{
+        position: relative;
+        width: 32.2rem;
+        height: 63.9rem;
+        .form{
+            .footer-heading {
+                position: absolute;
+                width: 23.8rem;
+                height: 4.7rem;
+                left: 4.2rem;
+                top: 2.3rem;
+                text-align: center;
+                letter-spacing: 0.3rem;
+            }
+            .label1 {
+                position: absolute;
+                width: 8.5rem;
+                height: 1.9rem;
+                left: 11.8rem;
+                top: 7.7rem;
+                font-size: $size-p;
+                text-align: center;
+                letter-spacing: 0.07rem;
+            }
+            .text-box1 {
+                position: absolute;
+                width: 22rem;
+                height: 3.4rem;
+                left: 5.1rem;
+                top: 10.3rem;
+                border: solid 0.3rem $blue;
+                border-radius: 1.3rem;
+            }
+            .label2 {
+                position: absolute;
+                width: 8.4rem;
+                height: 1.9rem;
+                left: 11.9rem;
+                top: 14.4rem;
+                font-size: $size-p;
+                text-align: center;
+                letter-spacing: 0.07rem;
+            }
+            .text-box2 {
+                position: absolute;
+                width: 22rem;
+                height: 3.4rem;
+                left: 5.1rem;
+                top: 17rem;
+                border: solid 0.3rem $blue;
+                border-radius: 1.3rem;
+            }
+            .label3 {
+                position: absolute;
+                width: 11.1rem;
+                height: 1.9rem;
+                left: 10.5rem;
+                top: 21.1rem;
+                font-size: $size-p;
+                text-align: center;
+                letter-spacing: 0.07rem;
+            }
+            .text-box3 {
+                position: absolute;
+                width: 22rem;
+                height: 3.4rem;
+                left: 5.1rem;
+                top: 23.7rem;
+                border: solid 0.3rem $blue;
+                border-radius: 1.3rem;
+            }
+            .label4 {
+                position: absolute;
+                width: 11rem;
+                height: 1.9rem;
+                left: 10.6rem;
+                top: 27.8rem;
+                font-size: $size-p;
+                text-align: center;
+                letter-spacing: 0.07rem;
+            }
+            .text-area {
+                position: absolute;
+                width: 22rem;
+                height: 11.7rem;
+                left: 5.1rem;
+                top: 30.4rem;
+                border: solid 0.3rem $blue;
+                border-radius: 1.3rem;
+            }
+            .submit-button {
+                position: absolute;
+                width: 22rem;
+                height: 3.7rem;
+                left: 5.1rem;
+                top: 44rem;
+                border: solid 0.3rem $blue;
+                border-radius: 1.3rem;
+                font-size: 1.92rem;
+                color: $white;
+                background-color: $blue;
+            }
+        }
+        nav {
+            @keyframes animate-tips {
+                0% {
+                    transform: scale(1);
+                    filter: brightness(1);
+                }
+                25% {
+                    transform: scale(1.1);
+                }
+                35% {
+                    transform: scale(1.2);
+                    filter: brightness(1.2);
+                }
+                45% {
+                    transform: scale(1.3);
+                    filter: brightness(3);
+                }
+                70% {
+                    transform: scale(1.2);
+                    filter: brightness(2.2);
+                }
+                80% {
+                    transform: scale(1.15);
+                }
+                90% {
+                    transform: scale(1.1);
+                }
+                100% {
+                    transform: scale(1);
+                    filter: brightness(1);
+                }
+            }
+            .tips {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                left: 11rem;
+                top: 51.5rem;
+                animation-name: animate-tips;
+                animation-duration: 2.4s;
+                animation-delay: 0.5s;
+                animation-timing-function:linear;
+                animation-iteration-count: infinite;
+            }
+            .youtube {
+                position: absolute;
+                width: 3.9rem;
+                height: 3.4rem;
+                left: 17.3rem;
+                top: 51.8rem;
+            }
+        }
+        .copyright {
+            position: absolute;
+            width: 25.4rem;
+            height: 1.6rem;
+            left: 3.4rem;
+            top: 59.3rem;
+            font-size: 1.333rem;
+            text-align: center;
+            letter-spacing: 0.075rem;
+        }
+    }
+}
+
+// footer for medium sizes
+@include media(medium) {
+    .contact-section {
+        position: relative;
+        display: revert;
+        width: 144rem;
+        height: 92.8rem;
+        background-color: $white;
+        border: solid 0.25rem $border;
+        color: $blue;
+        .footer-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            .form {
+                .footer-heading {
+                    position: absolute;
+                    width: revert;
+                    height: revert;
+                    left: 60.2rem;
+                    top: 17.1rem;
+                    letter-spacing: 0.35rem;
+                }
+                .label1 {
+                    position: absolute;
+                    width: revert;
+                    height: revert;
+                    left: 67.7rem;
+                    top: 22.5rem;
+                    font-size: $size-p;
+                    letter-spacing: 0.1rem;
+                }
+                .text-box1 {
+                    position: absolute;
+                    left: 61rem;
+                    top: 25.1rem;
+                    width: 22rem;
+                    height: 2.6rem;
+                    border: solid 0.3rem $blue;
+                    border-radius: 1.3rem;
+                }
+                .label2 {
+                    position: absolute;
+                    width: revert;
+                    height: revert;
+                    left: 67.8rem;
+                    top: 29.2rem;
+                    font-size: $size-p;
+                    letter-spacing: 0.1rem;
+                }
+                .text-box2 {
+                    position: absolute;
+                    left: 61rem;
+                    top: 31.8rem;
+                    width: 22rem;
+                    height: 2.6rem;
+                    border: solid 0.3rem $blue;
+                    border-radius: 1.3rem;
+                }
+                .label3 {
+                    position: absolute;
+                    width: revert;
+                    height: revert;
+                    left: 66.4rem;
+                    top: 35.9rem;
+                    font-size: $size-p;
+                    letter-spacing: 0.1rem;
+                }
+                .text-box3 {
+                    position: absolute;
+                    left: 61rem;
+                    top: 38.5rem;
+                    width: 22rem;
+                    height: 2.6rem;
+                    border: solid 0.3rem $blue;
+                    border-radius: 1.3rem;
+                }
+                .label4 {
+                    position: absolute;
+                    width: revert;
+                    height: revert;
+                    left: 66.5rem;
+                    top: 42.6rem; 
+                    font-size: $size-p;
+                    letter-spacing: 0.1rem;
+                }
+                .text-area {
+                    position: absolute;
+                    left: 61rem;
+                    top: 45.2rem;
+                    width: 22rem;
+                    height: 11.7rem;
+                    border: solid 0.3rem $blue;
+                    border-radius: 1.3rem;
+                }
+                .submit-button {
+                    position: absolute;
+                    left: 61rem;
+                    top: 58.8rem;
+                    width: 22rem;
+                    height: 3.6rem;
+                    border: solid 0.3rem $blue;
+                    border-radius: 1.3rem;
+                    font-size: 1.92rem;
+                    color: $white;
+                    background-color: $blue;
+                }
+            }
+            nav {
+                .tips {
+                    position: absolute;
+                    left: 66.9rem;
+                    top: 66.3rem;
+                }
+                .youtube {
+                    position: absolute;
+                    left: 73.2rem;
+                    top: 67rem;  
+                }
+            }
+            .copyright {
+                position: absolute;
+                left: 59.6rem;
+                top: 74.1rem;
+                letter-spacing: 0.075rem;
+            }    
+        }
+    }
+}
+
+
+

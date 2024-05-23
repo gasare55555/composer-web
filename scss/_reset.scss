@@ -1,0 +1,22 @@
+* {
+    padding: 0;  
+    margin: 0 0;
+    max-width: 1440px;  
+}
+
+html {
+    margin: 0 auto;
+    font-size: 62.5%;
+    body {
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+@include media(medium) {
+    html {
+        width: 144rem;
+    }
+}
