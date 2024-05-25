@@ -507,6 +507,9 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .active:hover {
 .videos .carousel {
   padding-bottom: 56.52%;
 }
+.videos .carousel .carousel-indicators {
+  display: none;
+}
 .videos .carousel .carousel-inner {
   position: absolute;
   width: 100%;
@@ -518,16 +521,35 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .active:hover {
   height: 100%;
 }
 .videos .carousel .carousel-inner .carousel-caption {
+  bottom: 0;
   line-height: 99.78%;
   letter-spacing: 0.05rem;
 }
+.videos .carousel .carousel-inner .carousel-caption .size-6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.videos .carousel .carousel-control-prev {
+  left: 2.5rem;
+  top: 45%;
+  bottom: 43%;
+  opacity: revert;
+}
 .videos .carousel .carousel-control-prev .carousel-control-prev-icon {
-  width: 3rem;
-  height: 3rem;
+  background-image: url(../assets/left-arrow.svg);
+  width: 100%;
+  height: 100%;
+}
+.videos .carousel .carousel-control-next {
+  right: 2.5rem;
+  top: 45%;
+  bottom: 43%;
+  opacity: revert;
 }
 .videos .carousel .carousel-control-next .carousel-control-next-icon {
-  width: 3rem;
-  height: 3rem;
+  background-image: url(../assets/right-arrow.svg);
+  width: 100%;
+  height: 100%;
 }
 
 .section2 {
@@ -545,6 +567,11 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .active:hover {
   background-color: #1b012d;
 }
 
+@media (min-width: 576px) {
+  .section1 .videos .carousel-inner .carousel-caption .size-6, .section2 .videos .carousel-inner .carousel-caption .size-6, .section3 .videos .carousel-inner .carousel-caption .size-6, .section4 .videos .carousel-inner .carousel-caption .size-6 {
+    font-size: 1.92rem;
+  }
+}
 @media (min-width: 768px) {
   .section1, .section2, .section3, .section4 {
     position: relative;
@@ -583,20 +610,6 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .active:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-  }
-  .section1 .videos .carousel .carousel-inner, .section2 .videos .carousel .carousel-inner, .section3 .videos .carousel .carousel-inner, .section4 .videos .carousel .carousel-inner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .section1 .videos .carousel .carousel-inner .carousel-item, .section2 .videos .carousel .carousel-inner .carousel-item, .section3 .videos .carousel .carousel-inner .carousel-item, .section4 .videos .carousel .carousel-inner .carousel-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .section1 .videos .carousel .carousel-inner .carousel-caption, .section2 .videos .carousel .carousel-inner .carousel-caption, .section3 .videos .carousel .carousel-inner .carousel-caption, .section4 .videos .carousel .carousel-inner .carousel-caption {
-    line-height: 99.78%;
-    letter-spacing: 0.05rem;
   }
 }
 @media (min-width: 768px) {

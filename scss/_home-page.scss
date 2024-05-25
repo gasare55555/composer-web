@@ -44,6 +44,9 @@
         justify-content: center;
         .carousel {
             padding-bottom: 56.52%;
+            .carousel-indicators {
+                display: none;
+            }
             .carousel-inner {
                 position: absolute;
                 width: 100%;
@@ -54,23 +57,37 @@
                     height: 100%; 
                 }
                 .carousel-caption {
+                    bottom: 0;
                     line-height: 99.78%;
                     letter-spacing: 0.05rem;
+                    .size-6 {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                    }
                 }
             }    
             .carousel-control-prev {
+                left: 2.5rem;
+                top: 45%;
+                bottom: 43%;
+                opacity: revert;
                 .carousel-control-prev-icon {
-                    width: 3rem;
-                    height: 3rem;
+                    background-image: url(../assets/left-arrow.svg);                   
+                    width: 100%;
+                    height: 100%;                   
                 }
             }
             .carousel-control-next {
+                right: 2.5rem;
+                top: 45%;
+                bottom: 43%;
+                opacity: revert;
                 .carousel-control-next-icon {
-                    width: 3rem;
-                    height: 3rem;
+                    background-image: url(../assets/right-arrow.svg);   
+                    width: 100%;
+                    height: 100%;         
                 }
-            }
-            
+            }           
         }
     }
 
@@ -91,6 +108,20 @@
 .section4 {
     @extend .section1;
     background-color: $violet;
+}
+// home page main: small breakpoint
+@include media(small) {
+    .section1, .section2, .section3, .section4 {
+        .videos {
+            .carousel-inner {
+                .carousel-caption{
+                    .size-6 {
+                        font-size: 1.92rem;
+                    }                   
+                }
+            }
+        }
+    }
 }
 
 // home page main: medium breakpoint
@@ -130,21 +161,7 @@
             .carousel {
                 position: absolute;
                 width: 100%;
-                height: 100%;
-                .carousel-inner {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    .carousel-item {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                    }
-                    .carousel-caption {
-                        line-height: 99.78%;
-                        letter-spacing: 0.05rem;
-                    }
-                }
+                height: 100%; 
             }
         }
     } 

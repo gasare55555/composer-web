@@ -6,7 +6,7 @@ lite-youtube {
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-    max-width: 720px;
+    /* max-width: 720px; */
 }
 
 /* gradient */
@@ -77,6 +77,7 @@ lite-youtube .lty-playbtn:focus {
 /* Post-click styles */
 lite-youtube.lyt-activated {
     cursor: unset;
+    z-index: 1;
 }
 lite-youtube.lyt-activated::before,
 lite-youtube.lyt-activated > .lty-playbtn {
