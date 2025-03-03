@@ -1,14 +1,11 @@
 // home page main: mobile first
 // section 1
 .section1 {
-    display: grid;
-    grid-template-rows: max-content max-content;
     background-color: $blue;
     .phrases {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         gap: 1.9rem;
         padding: 5.7rem 4rem;
         .section-subheading {
@@ -36,7 +33,6 @@
             }
         }
     }
- }
     .videos {
         position: relative;
         display: flex;
@@ -90,6 +86,7 @@
             }           
         }
     }
+}
 
 // section 2
 .section2 {

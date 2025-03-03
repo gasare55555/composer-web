@@ -5,22 +5,33 @@ header {
     border: solid 0.25rem $border;
     color: $blue;
     .navbar{
+        padding: 0;
         .container-fluid {
             padding: 1rem;
             margin-left: 1rem;
             margin-right: 1rem;
             .navbar-brand {
                 margin-right: revert;
+                .logo {
+                    height: 52px;
+                }
+            }
+            .name {
+                margin: 0;
             }
             .navbar-toggler {
-                .navbar-toggler-icon{
-                    padding: 2.7rem;
+                font-size: 3.6rem;
+                border: 0px;
+                padding-inline: 0.4rem;
+                .navbar-toggler-icon {
+                    width: 1.4em;
+                    height: 1.4em;
+                    background-image: url("../assets/hamburger-icon.svg");
                 }
             }
             .navbar-collapse {
                 .navbar-nav {
-                    display: flex;
-                    justify-content: space-between;
+                    align-items: center;
                     font-size: $size-p; 
                     font-weight: 300;   
                     letter-spacing: 0.2rem;
@@ -30,14 +41,14 @@ header {
                     .nav-link {
                         transition: all 0.07s; 
                         &:hover{
-                            transform: scale(1.1);                           
+                            transform: scale(1.1);   
                         }
                     }
                     .active {
                         font-weight: 800;
                         transition: all 0.07s; 
                         &:hover{
-                            transform: scale(1.2);                         
+                            transform: scale(1.2);   
                         }
                     }
                 }
@@ -65,11 +76,13 @@ header {
                 margin-right: revert;
                 .navbar-brand {
                     .logo {
+                        height: 63px;
                         margin-left: 5.4rem;
                     }
                 }
                 .name {
                     margin-left: 32.2rem;
+                    font-size: 3.981rem;
                 }
                 .navbar-collapse {
                     flex-grow: revert;
