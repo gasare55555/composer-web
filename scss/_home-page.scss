@@ -3,7 +3,6 @@
 .section1 {
     background-color: $blue;
     .phrases {
-        position: relative;
         display: flex;
         flex-direction: column;
         gap: 1.9rem;
@@ -34,24 +33,11 @@
         }
     }
     .videos {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         .carousel {
-            padding-bottom: 56.52%;
             .carousel-indicators {
                 display: none;
             }
             .carousel-inner {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                .carousel-item {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%; 
-                }
                 .carousel-caption {
                     bottom: 0;
                     line-height: 99.78%;
@@ -126,11 +112,10 @@
 @include media(medium) {
     .section1 {
         position: relative;
-        width: 144rem;
-        height: 67.2rem;
+        max-width: 144rem;
+        min-height: 67.2rem;
         background-color: $blue;
-        .phrases{
-            position: revert;
+        .phrases {
             display: revert;
             .section-subheading {
                 position: absolute;
@@ -139,7 +124,7 @@
                 letter-spacing: 0.2rem;
                 color: $white;
             }
-            .section-heading1{
+            .section-heading1 {
                 position: absolute;
                 top: 24rem;
                 right: 85.8rem;

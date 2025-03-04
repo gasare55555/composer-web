@@ -1,6 +1,5 @@
 // header for small sizes
 header {
-    position: relative;
     background-color: $white;
     border: solid 0.25rem $border;
     color: $blue;
@@ -17,15 +16,22 @@ header {
                 }
             }
             .name {
-                margin: 0;
+                margin: 0 0 0 -4px;
             }
             .navbar-toggler {
+                display: grid;
+                place-content: center;
+                width: 1.2em;
+                height: 1.2em;
                 font-size: 3.6rem;
                 border: 0px;
                 padding-inline: 0.4rem;
+                &:focus {
+                    box-shadow: none;
+                }
                 .navbar-toggler-icon {
-                    width: 1.4em;
-                    height: 1.4em;
+                    width: 1.35em;
+                    height: 1.35em;
                     background-image: url("../assets/hamburger-icon.svg");
                 }
             }
@@ -36,17 +42,17 @@ header {
                     font-weight: 300;   
                     letter-spacing: 0.2rem;
                     margin-left: 1rem;
-                    margin-top: 1.8rem;
-                    margin-bottom: 1.8rem;             
+                    margin-block: 2.8rem;
+                    row-gap: 1.6rem;         
                     .nav-link {
-                        transition: all 0.07s; 
+                        transition: all 0.3s; 
                         &:hover{
                             transform: scale(1.1);   
                         }
                     }
                     .active {
                         font-weight: 800;
-                        transition: all 0.07s; 
+                        transition: all 0.3s; 
                         &:hover{
                             transform: scale(1.2);   
                         }
@@ -61,8 +67,7 @@ header {
 // header for medium sizes
 @include media(medium) {
     header {
-        position: relative;
-        width: 144rem;
+        max-width: 144rem;
         height: 12rem;
         background-color: $white;
         border: solid 0.25rem $border;
@@ -83,6 +88,9 @@ header {
                 .name {
                     margin-left: 32.2rem;
                     font-size: 3.981rem;
+                }
+                .navbar-toggler {
+                    display: none;
                 }
                 .navbar-collapse {
                     flex-grow: revert;
