@@ -1,181 +1,181 @@
 // home page main: mobile first
 // section 1
 .section1 {
-    background-color: $blue;
-    .phrases {
-        display: flex;
-        flex-direction: column;
-        gap: 1.9rem;
-        padding: 5.7rem 4rem;
-        .section-subheading {
-            letter-spacing: 0.2rem;
-            color: $white;
-        }
-        .section-heading1 {
-            text-align: right;
-            line-height: 4.9rem;
-            letter-spacing: 0.3rem;
-            color: $white;
-            @include media(font-size4) {   
-                font-size: 4.2rem;   
-            }
-            @include media(font-size3) {               
-                font-size: 3.7rem;
-            }
-            @include media(font-size2) {
-                font-size: 3.4rem;
-                letter-spacing: 0.2rem;
-            }
-            @include media(font-size1) {
-                font-size: 3.2rem;
-                letter-spacing: 0.1rem;
-            }
-        }
-    }
-    .videos {
-        .carousel {
-            .carousel-indicators {
-                display: none;
-            }
-            .carousel-inner {
-                .carousel-caption {
-                    bottom: 0;
-                    line-height: 99.78%;
-                    letter-spacing: 0.05rem;
-                    .size-6 {
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                    }
-                }
-            }    
-            .carousel-control-prev {
-                left: 2.5rem;
-                top: 45%;
-                bottom: 43%;
-                opacity: revert;
-                .carousel-control-prev-icon {
-                    background-image: url(../assets/left-arrow.svg);                   
-                    width: 100%;
-                    height: 100%;                   
-                }
-            }
-            .carousel-control-next {
-                right: 2.5rem;
-                top: 45%;
-                bottom: 43%;
-                opacity: revert;
-                .carousel-control-next-icon {
-                    background-image: url(../assets/right-arrow.svg);   
-                    width: 100%;
-                    height: 100%;         
-                }
-            }           
-        }
-    }
+	background-color: $blue;
+	.phrases {
+		display: flex;
+		flex-direction: column;
+		gap: 1.9rem;
+		padding: 5.7rem 4rem;
+		.section-subheading {
+			letter-spacing: 0.2rem;
+			color: $white;
+		}
+		.section-heading1 {
+			text-align: right;
+			line-height: 4.9rem;
+			letter-spacing: 0.3rem;
+			color: $white;
+			@include media(font-size4) {   
+				font-size: 4.2rem;   
+			}
+			@include media(font-size3) {               
+				font-size: 3.7rem;
+			}
+			@include media(font-size2) {
+				font-size: 3.4rem;
+				letter-spacing: 0.2rem;
+			}
+			@include media(font-size1) {
+				font-size: 3.2rem;
+				letter-spacing: 0.1rem;
+			}
+		}
+	}
+	.videos {
+		.carousel {
+			.carousel-indicators {
+				display: none;
+			}
+			.carousel-inner {
+				.carousel-caption {
+					bottom: 0;
+					line-height: 99.78%;
+					letter-spacing: 0.05rem;
+					.size-6 {
+						font-size: 1.6rem;
+						font-weight: 700;
+					}
+				}
+			}    
+			.carousel-control-prev {
+				left: 2.5rem;
+				top: 45%;
+				bottom: 43%;
+				opacity: revert;
+				.carousel-control-prev-icon {
+					background-image: url(../assets/left-arrow.svg);                   
+					width: 100%;
+					height: 100%;                   
+				}
+			}
+			.carousel-control-next {
+				right: 2.5rem;
+				top: 45%;
+				bottom: 43%;
+				opacity: revert;
+				.carousel-control-next-icon {
+					background-image: url(../assets/right-arrow.svg);   
+					width: 100%;
+					height: 100%;         
+				}
+			}           
+		}
+	}
 }
 
 // section 2
 .section2 {
-    @extend .section1;
-    background-color: $purple;
+	@extend .section1;
+	background-color: $purple;
 }
 // section 3
 .section3 {
-    @extend .section1;
-    background-color: $green;
-    .section-heading1 {
-        letter-spacing: 0.3rem;
-    }
+	@extend .section1;
+	background-color: $green;
+	.section-heading1 {
+		letter-spacing: 0.3rem;
+	}
 }
 // section 4
 .section4 {
-    @extend .section1;
-    background-color: $violet;
+	@extend .section1;
+	background-color: $violet;
 }
 // home page main: small breakpoint
 @include media(small) {
-    .section1, .section2, .section3, .section4 {
-        .videos {
-            .carousel-inner {
-                .carousel-caption{
-                    .size-6 {
-                        font-size: 1.92rem;
-                    }                   
-                }
-            }
-        }
-    }
+	.section1, .section2, .section3, .section4 {
+		.videos {
+			.carousel-inner {
+				.carousel-caption{
+					.size-6 {
+						font-size: 1.92rem;
+					}                   
+				}
+			}
+		}
+	}
 }
 
 // home page main: medium breakpoint
 // section 1
 @include media(medium) {
-    .section1 {
-        position: relative;
-        max-width: 144rem;
-        min-height: 67.2rem;
-        background-color: $blue;
-        .phrases {
-            display: revert;
-            .section-subheading {
-                position: absolute;
-                top: 17.1rem;
-                left: 17.1rem;
-                letter-spacing: 0.2rem;
-                color: $white;
-            }
-            .section-heading1 {
-                position: absolute;
-                top: 24rem;
-                right: 85.8rem;
-                text-align: right;
-                line-height: 4.9rem;
-                letter-spacing: 0.3rem;
-                color: $white;
-            }
-        }
-        .videos {
-            position: absolute;
-            top: 17.1rem;
-            left: 69.6rem;
-            width: 57.3rem;
-            height: 32.251rem;
-            .carousel {
-                position: absolute;
-                width: 100%;
-                height: 100%; 
-            }
-        }
-    } 
+	.section1 {
+		position: relative;
+		max-width: 144rem;
+		min-height: 67.2rem;
+		background-color: $blue;
+		.phrases {
+			display: revert;
+			.section-subheading {
+				position: absolute;
+				top: 17.1rem;
+				left: 17.1rem;
+				letter-spacing: 0.2rem;
+				color: $white;
+			}
+			.section-heading1 {
+				position: absolute;
+				top: 24rem;
+				right: 85.8rem;
+				text-align: right;
+				line-height: 4.9rem;
+				letter-spacing: 0.3rem;
+				color: $white;
+			}
+		}
+		.videos {
+			position: absolute;
+			top: 17.1rem;
+			left: 69.6rem;
+			width: 57.3rem;
+			height: 32.251rem;
+			.carousel {
+				position: absolute;
+				width: 100%;
+				height: 100%; 
+			}
+		}
+	} 
 }
 // section 2
 @include media(medium) {
-    .section2 {
-        @extend .section1;
-        background-color: $purple;
-    }   
+	.section2 {
+		@extend .section1;
+		background-color: $purple;
+	}   
 }
 // section 3
 @include media(medium) {
-    .section3 {
-        @extend .section1;
-        background-color: $green;
-        .section-heading2{
-            position: absolute;
-            top: 24rem;
-            right: 85.8rem;
-            text-align: right;
-            line-height: 4.9rem;
-            letter-spacing: 0.4rem;
-            color: white;
-        }
-    }   
+	.section3 {
+		@extend .section1;
+		background-color: $green;
+		.section-heading2{
+			position: absolute;
+			top: 24rem;
+			right: 85.8rem;
+			text-align: right;
+			line-height: 4.9rem;
+			letter-spacing: 0.4rem;
+			color: white;
+		}
+	}   
 }
 // section 4
 @include media(medium) {
-    .section4 {
-        @extend .section1;
-        background-color: $violet;
-    }   
+	.section4 {
+		@extend .section1;
+		background-color: $violet;
+	}   
 }
 

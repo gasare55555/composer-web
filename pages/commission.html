@@ -2,152 +2,152 @@
 <html lang="en">
 <!-- Meta with Bootstrap, AOS and CSS stylesheet -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Commission page for composer Gaston. Select a service tier with the price of your preference and check the available features and details your music production will have.">
-    <meta name="keywords" content="PRODUCTION, MUSIC, TIER, FEATURES, PROJECT, PRICE">
-    <title>Commission</title>
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Commission page for composer Gaston. Select a service tier with the price of your preference and check the available features and details your music production will have.">
+	<meta name="keywords" content="PRODUCTION, MUSIC, TIER, FEATURES, PROJECT, PRICE">
+	<title>Commission</title>
+	<link rel="shortcut icon" href="../assets/logo.png" type="image/png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.min.css">
 </head>
 <body>
 <!-- Navigation bar imported from Bootstrap -->
-    <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../assets/logo.png" alt="page logo" height="63px">
-                </a>
-                <h2 class="name size-4">Gastón</h2>
-                <button class="navbar-toggler" type="button"        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav roboto-500">
-                        <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./albums.html">Albums</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./commission.html">Commission</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>   
-    </header>
+	<header>
+		<nav class="navbar navbar-expand-md bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html">
+					<img class="logo" src="../assets/logo.png" alt="page logo" height="63px">
+				</a>
+				<h2 class="name size-4">Gastón</h2>
+				<button class="navbar-toggler" type="button"        data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav roboto-500">
+						<li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+              <a class="nav-link" href="./albums.html">Albums</a>
+						</li>
+						<li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./commission.html">Commission</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>   
+	</header>
 <!-- Main section with commission info and a picture -->
-    <main class="commission-main">
-        <!-- Title -->
-        <div class="commission-heading-container">
-            <h1 class="commission-heading notosans-500 size-1" data-aos="zoom-in" data-aos-duration="1800">Get your own piece of music</h1>
-        </div>
-        
-        <div class="commission-content-container" data-aos="zoom-in" data-aos-duration="1800">
-            <!-- Picture -->
-            <section class="commission-picture-container">
-                <img class="commission-picture" src="../assets/sheet-music.jpg" alt="sheet music picture">
-            </section>
-            <!-- Commission info -->
-            <section class="commission-box">          
-                <div class="commission-tier">
-                    <h3 class="tier-heading roboto-200 size-p">Select Service Tier</h3>
-                    <input class="radio-button1" type="radio" id="starter" value="starter" name="tier1">
-                    <label class="starter-label roboto-200" for="starter">Starter</label>
-                    <label class="starter-price roboto-200" for="starter">100$</label>
-                    <input class="radio-button2" type="radio" id="standard" value="standard" name="tier2">
-                    <label class="standard-label roboto-200" for="standard">Standard</label>
-                    <label class="standard-price roboto-200" for="standard">200$</label>
-                    <input class="radio-button3" type="radio" id="advanced" value="advanced" name="tier3">
-                    <label class="advanced-label roboto-200" for="advanced">Advanced</label>
-                    <label class="advanced-price roboto-200" for="advanced">300$</label>
-                </div>
-                <div class="commission-text">
-                    <div class="commission-text-titles">
-                        <h2 class="commission-text-heading1 notosans-500 size-4">Music Production</h2>
-                        <h3 class="commission-text-subheading notosans-150 size-6">A simple piece that meets your needs</h3>
-                    </div>
-                    <div class="commission-feature-box roboto-300">
-                        <p class="commission-text-feature1 size-p">Delivery Time</p>
-                        <p class="commission-text-feature2 size-p">Number of Revisions</p>
-                        <p class="commission-text-feature3 size-p">Number of Seconds</p>
-                        <p class="commission-text-feature4 size-p">Number of Instruments</p>
-                        <p class="commission-text-feature5 size-p">HQ Audio File</p>
-                        <p class="commission-text-feature6 size-p">Commercial Use</p>
-                        <p class="commission-text-feature7 size-p">Separate Tracks</p>
-                        <p class="commission-text-value1 size-p">7 days</p>
-                        <p class="commission-text-value2 size-p">1</p>
-                        <p class="commission-text-value3 size-p">90</p>
-                        <p class="commission-text-value4 size-p">3</p>
-                        <img class="commission-text-value5" src="../assets/tick.svg" alt="tick icon">
-                        <img class="commission-text-value6" src="../assets/tick.svg" alt="tick icon">
-                        <img class="commission-text-value7" src="../assets/tick.svg" alt="tick icon">
-                    </div>
-                    <div class="commission-product-description">
-                        <h2 class="commission-text-heading2 notosans-500 size-4">Project Details</h2>
-                        <p class="commission-text-paragraph1 roboto-300 size-p">You will get a professionally composed, recorded and mixed music production. With over 10 years of experience in Music Composition and Audio Engineering, complemented by a strong academic background, I will deliver a product that will satisfy your needs and enhance the overall quality of your own project.</p>
-                        <p class="commission-text-paragraph2 roboto-300 size-p">Each of my compositions is carefully crafted in my professional, acoustically treated studio, ensuring the overall sound quality and tonal balance, so that the resulting music translates adequately to a multitude of listening environments and is suitable for commercial distribution.</p>
-                        <h4 class="commission-text-extra1 notosans-500 size-6">Genre</h4>
-                        <p class="commission-text-extra2 roboto-300 size-p">Cinematic, Orchestral, Soundtrack, Classical, Other.</p>
-                        <h4 class="commission-text-extra3 notosans-500 size-6">Purpose</h4>
-                        <p class="commission-text-extra4 roboto-300 size-p">Film & Video, Advertising, Videogame, Podcast, Other.</p>
-                    </div>
-                </div>
-                <div class="commission-tier">
-                    <h3 class="tier-heading roboto-200 size-p">Select Service Tier</h3>
-                    <input class="radio-button1" type="radio" id="starter" value="starter" name="tier1">
-                    <label class="starter-label roboto-200" for="starter">Starter</label>
-                    <label class="starter-price roboto-200" for="starter">100$</label>
-                    <input class="radio-button2" type="radio" id="standard" value="standard" name="tier2">
-                    <label class="standard-label roboto-200" for="standard">Standard</label>
-                    <label class="standard-price roboto-200" for="standard">200$</label>
-                    <input class="radio-button3" type="radio" id="advanced" value="advanced" name="tier3">
-                    <label class="advanced-label roboto-200" for="advanced">Advanced</label>
-                    <label class="advanced-price roboto-200" for="advanced">300$</label>
-                </div>
-            </section>
-        </div>
-    </main>
+	<main class="commission-main">
+		<!-- Title -->
+		<div class="commission-heading-container">
+			<h1 class="commission-heading notosans-500 size-1" data-aos="zoom-in" data-aos-duration="1800">Get your own piece of music</h1>
+		</div>
+		
+		<div class="commission-content-container" data-aos="zoom-in" data-aos-duration="1800">
+			<!-- Picture -->
+			<section class="commission-picture-container">
+				<img class="commission-picture" src="../assets/sheet-music.jpg" alt="sheet music picture">
+			</section>
+			<!-- Commission info -->
+			<section class="commission-box">          
+				<div class="commission-tier">
+					<h3 class="tier-heading roboto-200 size-p">Select Service Tier</h3>
+					<input class="radio-button1" type="radio" id="starter" value="starter" name="tier1">
+					<label class="starter-label roboto-200" for="starter">Starter</label>
+					<label class="starter-price roboto-200" for="starter">100$</label>
+					<input class="radio-button2" type="radio" id="standard" value="standard" name="tier2">
+					<label class="standard-label roboto-200" for="standard">Standard</label>
+					<label class="standard-price roboto-200" for="standard">200$</label>
+					<input class="radio-button3" type="radio" id="advanced" value="advanced" name="tier3">
+					<label class="advanced-label roboto-200" for="advanced">Advanced</label>
+					<label class="advanced-price roboto-200" for="advanced">300$</label>
+				</div>
+				<div class="commission-text">
+					<div class="commission-text-titles">
+						<h2 class="commission-text-heading1 notosans-500 size-4">Music Production</h2>
+						<h3 class="commission-text-subheading notosans-150 size-6">A simple piece that meets your needs</h3>
+					</div>
+					<div class="commission-feature-box roboto-300">
+						<p class="commission-text-feature1 size-p">Delivery Time</p>
+						<p class="commission-text-feature2 size-p">Number of Revisions</p>
+						<p class="commission-text-feature3 size-p">Number of Seconds</p>
+						<p class="commission-text-feature4 size-p">Number of Instruments</p>
+						<p class="commission-text-feature5 size-p">HQ Audio File</p>
+						<p class="commission-text-feature6 size-p">Commercial Use</p>
+						<p class="commission-text-feature7 size-p">Separate Tracks</p>
+						<p class="commission-text-value1 size-p">7 days</p>
+						<p class="commission-text-value2 size-p">1</p>
+						<p class="commission-text-value3 size-p">90</p>
+						<p class="commission-text-value4 size-p">3</p>
+						<img class="commission-text-value5" src="../assets/tick.svg" alt="tick icon">
+						<img class="commission-text-value6" src="../assets/tick.svg" alt="tick icon">
+						<img class="commission-text-value7" src="../assets/tick.svg" alt="tick icon">
+					</div>
+					<div class="commission-product-description">
+						<h2 class="commission-text-heading2 notosans-500 size-4">Project Details</h2>
+						<p class="commission-text-paragraph1 roboto-300 size-p">You will get a professionally composed, recorded and mixed music production. With over 10 years of experience in Music Composition and Audio Engineering, complemented by a strong academic background, I will deliver a product that will satisfy your needs and enhance the overall quality of your own project.</p>
+						<p class="commission-text-paragraph2 roboto-300 size-p">Each of my compositions is carefully crafted in my professional, acoustically treated studio, ensuring the overall sound quality and tonal balance, so that the resulting music translates adequately to a multitude of listening environments and is suitable for commercial distribution.</p>
+						<h4 class="commission-text-extra1 notosans-500 size-6">Genre</h4>
+						<p class="commission-text-extra2 roboto-300 size-p">Cinematic, Orchestral, Soundtrack, Classical, Other.</p>
+						<h4 class="commission-text-extra3 notosans-500 size-6">Purpose</h4>
+						<p class="commission-text-extra4 roboto-300 size-p">Film & Video, Advertising, Videogame, Podcast, Other.</p>
+					</div>
+				</div>
+				<div class="commission-tier">
+					<h3 class="tier-heading roboto-200 size-p">Select Service Tier</h3>
+					<input class="radio-button1" type="radio" id="starter" value="starter" name="tier1">
+					<label class="starter-label roboto-200" for="starter">Starter</label>
+					<label class="starter-price roboto-200" for="starter">100$</label>
+					<input class="radio-button2" type="radio" id="standard" value="standard" name="tier2">
+					<label class="standard-label roboto-200" for="standard">Standard</label>
+					<label class="standard-price roboto-200" for="standard">200$</label>
+					<input class="radio-button3" type="radio" id="advanced" value="advanced" name="tier3">
+					<label class="advanced-label roboto-200" for="advanced">Advanced</label>
+					<label class="advanced-price roboto-200" for="advanced">300$</label>
+				</div>
+			</section>
+		</div>
+	</main>
 <!-- Footer with contact section and social media icons -->
-    <footer class="contact-section">
-        <div class="footer-container">
-            <form class="form">
-                <h2 class="footer-heading roboto-500 size-2">Contact me</h2>
-                <label class="label1 roboto-300" for="first-name">First Name</label>
-                <input class="text-box1" type="text" name="First Name" id="first-name">
-                <label class="label2 roboto-300" for="last-name">Last Name</label>
-                <input class="text-box2" type="text" name="Last Name" id="last-name">
-                <label class="label3 roboto-300" for="email">Email Address</label>
-                <input class="text-box3" type="email" name="Email Address" id="email">
-                <label class="label4 roboto-300" for="message">Your Message</label>
-                <textarea class="text-area" name="Message" id="message"></textarea>
-                <input class="submit-button roboto-500" type="submit" value="Submit">
-            </form>
-            <nav>
-                <a href="https://www.paypal.com/paypalme/gastonarevalo" target="_blank">
-                    <img class="tips" src="../assets/tips.png" alt="tip jar">
-                </a>
-                <a href="https://www.youtube.com/@gastonarevalo55555" target="_blank">
-                    <img class="youtube" src="../assets/youtube.svg" alt="Youtube channel">
-                </a>
-            </nav>
-            <p class="copyright roboto-500">©  Gastón Arévalo.  All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+	<footer class="contact-section">
+		<div class="footer-container">
+			<form class="form">
+				<h2 class="footer-heading roboto-500 size-2">Contact me</h2>
+				<label class="label1 roboto-300" for="first-name">First Name</label>
+				<input class="text-box1" type="text" name="First Name" id="first-name">
+				<label class="label2 roboto-300" for="last-name">Last Name</label>
+				<input class="text-box2" type="text" name="Last Name" id="last-name">
+				<label class="label3 roboto-300" for="email">Email Address</label>
+				<input class="text-box3" type="email" name="Email Address" id="email">
+				<label class="label4 roboto-300" for="message">Your Message</label>
+				<textarea class="text-area" name="Message" id="message"></textarea>
+				<input class="submit-button roboto-500" type="submit" value="Submit">
+			</form>
+			<nav>
+				<a href="https://www.paypal.com/paypalme/gastonarevalo" target="_blank">
+					<img class="tips" src="../assets/tips.png" alt="tip jar">
+				</a>
+				<a href="https://www.youtube.com/@gastonarevalo55555" target="_blank">
+					<img class="youtube" src="../assets/youtube.svg" alt="Youtube channel">
+				</a>
+			</nav>
+			<p class="copyright roboto-500">©  Gastón Arévalo.  All rights reserved.</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
