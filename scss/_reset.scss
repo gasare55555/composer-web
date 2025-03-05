@@ -17,6 +17,6 @@ html {
 
 @include media(medium) {
     html {
-        width: 144rem;
+        max-width: 144rem;
     }
 }
