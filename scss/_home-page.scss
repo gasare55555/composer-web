@@ -118,8 +118,8 @@
 	.section1 {
     display: flex;
 		justify-content: center;
-    column-gap: 9.8%;
-    padding: 11.80%;
+    column-gap: 9.7%;
+    padding: 11.8%;
 		max-width: 144rem;
 		height: min(46.66vw, 67.2rem);
 		background-color: $blue;
@@ -128,10 +128,18 @@
 			flex-shrink: 1;
 			row-gap: 11%;
       padding: 0;
+			padding-top: 1px;
+			.section-subheading {
+				font-size: min(1.6vw, 2.304rem);
+			}
+			.section-heading1 {
+				font-size: min(3.318vw, 4.778rem);
+			}
 		}
 		.videos {
 			flex-basis: 57.3rem;
 			flex-shrink: 1;
+			align-self: center;
 		}
 	} 
 }
@@ -147,14 +155,10 @@
 	.section3 {
 		@extend .section1;
 		background-color: $green;
-		.section-heading2{
-			position: absolute;
-			top: 24rem;
-			right: 85.8rem;
-			text-align: right;
-			line-height: 4.9rem;
-			letter-spacing: 0.4rem;
-			color: white;
+		.phrases {
+			.section-heading1 {
+				letter-spacing: 0.4rem;
+			}
 		}
 	}   
 }
