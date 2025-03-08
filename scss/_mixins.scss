@@ -1,33 +1,39 @@
 // media queries
 @mixin media($breakpoint) {
-    @if $breakpoint == medium {
-        @media (min-width: 768px) {
+    @if $breakpoint == x-small {
+        @media (min-width: 18.75rem) {
             @content;
         }
-    }
+    } 
     @if $breakpoint == small {
-        @media (min-width: 576px) {
+        @media (min-width: 36rem) {
             @content;
         }
     }
-    @if $breakpoint == font-size4 {
-        @media (max-width: 456px) {
+    @if $breakpoint == medium {
+        @media (min-width: 48rem) {
             @content;
         }
     }
-    @if $breakpoint == font-size3 {
-        @media (max-width: 420px) {
+    @if $breakpoint == x-large {
+        @media (min-width: 75rem) {
             @content;
         }
     }
-    @if $breakpoint == font-size2 {
-        @media (max-width: 386px) {
+
+    @if $breakpoint == x-small-1 {
+        @media (min-width: 386px) {
             @content;
         }
     }
-    @if $breakpoint == font-size1 {
-        @media (max-width: 384px) {
+    @if $breakpoint == x-small-2 {
+        @media (min-width: 420px) {
             @content;
         }
     }
+    @if $breakpoint == x-small-3 {
+        @media (min-width: 456px) {
+            @content;
+        }
+    }    
 }

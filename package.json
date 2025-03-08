@@ -1,0 +1,22 @@
+{
+  "name": "composer-web",
+  "version": "1.0.0",
+  "description": "web for music composer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasare55555/composer-web.git"
+  },
+  "author": "Gastón Arévalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gasare55555/composer-web/issues"
+  },
+  "homepage": "https://github.com/gasare55555/composer-web#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

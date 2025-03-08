@@ -1,14 +1,16 @@
 // header for small sizes
 header {
+	max-width: 144rem;
 	background-color: $white;
 	border: solid 0.25rem $border;
 	color: $blue;
 	.navbar{
 		padding: 0;
 		.container-fluid {
-			padding: 1rem;
-			margin-left: 1rem;
-			margin-right: 1rem;
+			padding-block: 10px;
+			padding-inline: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
 			.navbar-brand {
 				margin-right: 0;
 				.logo {
@@ -16,22 +18,23 @@ header {
 				}
 			}
 			.name {
+				font-size: 27.65px;
 				margin: 0 0 0 -4px;
 			}
 			.navbar-toggler {
 				display: grid;
 				place-content: center;
-				width: 1.2em;
-				height: 1.2em;
-				font-size: 3.6rem;
+				width: 43.2px;
+				height: 43.2px;
+				font-size: 36px;
 				border: 0px;
-				padding-inline: 0.4rem;
+				padding-inline: 4px;
 				&:focus {
 					box-shadow: none;
 				}
 				.navbar-toggler-icon {
-					width: 1.35em;
-					height: 1.35em;
+					width: 48.6px;
+					height: 48.6px;
 					background-image: url("../assets/hamburger-icon.svg");
 				}
 			}
@@ -58,17 +61,50 @@ header {
                 transform: scale(1.2);   
               }
             }
-          }         
+          }       
 				}
 			}
 		}
 	}
 }
 
-// header for medium sizes
+@include media(x-small) {
+	header {
+		.navbar{
+			.container-fluid {
+				padding-block: 1rem;
+				.navbar-brand {
+					.logo {
+						height: 5.2rem;
+					}
+				}
+				.name {
+					font-size: 2.765rem;
+				}
+				.navbar-toggler {
+					width: 1.2em;
+					height: 1.2em;
+					font-size: 3.6rem;
+					padding-inline: 0.4rem;
+					.navbar-toggler-icon {
+						width: 1.35em;
+						height: 1.35em;
+					}
+				}
+			}
+		}
+	}
+}
+
 @include media(medium) {
 	header {
-		max-width: 144rem;
+		padding-block: 0.8rem;
+	}
+}
+
+// header for large sizes
+@include media(x-large) {
+	header {
 		height: 12rem;
 		.navbar{
 			height: 100%;
@@ -77,13 +113,13 @@ header {
 				margin-left: 0;
 				margin-right: 0;
 				.navbar-brand {
+					margin-left: 3.125%;
 					.logo {
 						height: 6.3rem;
-						margin-left: 5.4rem;
 					}
 				}
 				.name {
-					padding-left: 22.36%;
+					padding-left: max(36rem, 25%);
           padding-right: 8rem;
 					font-size: 3.981rem;
 				}
@@ -92,11 +128,11 @@ header {
 				}
 				.navbar-collapse {
 					flex-grow: revert;
+					margin: 0.9rem 3.125% 0 0;
 					.navbar-nav {
-            justify-content: center;
+						justify-content: end;
             flex-wrap: wrap;
             row-gap: 0;
-            margin: 0.9rem 4.5rem 0 0;
 						.nav-item {
 							margin-right: 0.85rem;
 							font-size: $size-p;    

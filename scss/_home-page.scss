@@ -6,30 +6,27 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.9rem;
-		padding: 5.7rem 4rem;
+		padding: 57px 40px;
 		.section-subheading {
 			letter-spacing: 0.2rem;
 			color: $white;
 		}
 		.section-heading1 {
 			text-align: right;
-			line-height: 4.9rem;
-			letter-spacing: 0.3rem;
+			line-height: 1.02;
 			color: $white;
-			@include media(font-size4) {   
-				font-size: 4.2rem;   
+			font-size: 32px;
+			letter-spacing: 1px;
+			@include media(x-small-1) {
+				font-size: 34px;
+				letter-spacing: 2px;
 			}
-			@include media(font-size3) {               
-				font-size: 3.7rem;
+			@include media(x-small-2) {               
+				font-size: 37px;
 			}
-			@include media(font-size2) {
-				font-size: 3.4rem;
-				letter-spacing: 0.2rem;
-			}
-			@include media(font-size1) {
-				font-size: 3.2rem;
-				letter-spacing: 0.1rem;
-			}
+			@include media(x-small-3) {   
+				font-size: 42px;   
+			}	
 		}
 	}
 	.videos {
@@ -134,6 +131,7 @@
 			}
 			.section-heading1 {
 				font-size: min(3.318vw, 4.778rem);
+				letter-spacing: 3px;
 			}
 		}
 		.videos {
