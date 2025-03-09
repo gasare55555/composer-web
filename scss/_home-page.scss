@@ -1,6 +1,7 @@
 // home page main: mobile first
-// section 1
-.section1 {
+// all sections
+.section1, .section2, .section3, .section4 {
+	max-width: 144rem;
 	background-color: $blue;
 	.phrases {
 		display: flex;
@@ -38,13 +39,24 @@
         .carousel-item {
           .carousel-caption {
             bottom: 0;
-            padding-block: 1rem;
+            padding-block: 10px;
             line-height: 99.78%;
             letter-spacing: 0.05rem;
-            .size-6 {
+            h4 {
               font-size: 1.6rem;
               font-weight: 700;
+							margin-bottom: 0;
             }
+						@include media(x-small) {
+							h4 {
+								margin-bottom: 8px;
+							}  
+						}
+						@include media(small-px) {
+							h4 {
+								font-size: 1.92rem;
+							}  
+						}
           }
         }
 			}    
@@ -76,12 +88,10 @@
 
 // section 2
 .section2 {
-	@extend .section1;
 	background-color: $purple;
 }
 // section 3
 .section3 {
-	@extend .section1;
 	background-color: $green;
 	.section-heading1 {
 		letter-spacing: 0.3rem;
@@ -89,40 +99,20 @@
 }
 // section 4
 .section4 {
-	@extend .section1;
 	background-color: $violet;
-}
-// home page main: small breakpoint
-@include media(small) {
-	.section1, .section2, .section3, .section4 {
-		.videos {
-			.carousel-inner {
-        .carousel-item {
-          .carousel-caption{
-            .size-6 {
-              font-size: 1.92rem;
-            }                   
-          }
-        }
-			}
-		}
-	}
 }
 
 // home page main: medium breakpoint
-// section 1
-@include media(medium) {
-	.section1 {
+// all sections
+@include media(medium-px) {
+	.section1, .section2, .section3, .section4 {
     display: flex;
 		justify-content: center;
     column-gap: 9.7%;
     padding: 11.8%;
-		max-width: 144rem;
 		height: min(46.66vw, 67.2rem);
-		background-color: $blue;
 		.phrases {
 			flex-basis: 41.6rem;
-			flex-shrink: 1;
 			row-gap: 11%;
       padding: 0;
 			padding-top: 1px;
@@ -136,23 +126,32 @@
 		}
 		.videos {
 			flex-basis: 57.3rem;
-			flex-shrink: 1;
 			align-self: center;
+			.carousel {
+				.carousel-inner {
+					.carousel-item {
+						.carousel-caption {
+							h4 {
+								font-size: 1.6rem;
+								margin-bottom: 0;
+							}
+							@include media(x-large-px) {
+								h4 {
+									font-size: 1.92rem;
+									margin-bottom: 8px;
+								}
+							}                   
+						}
+					}
+				}
+			}
 		}
 	} 
 }
-// section 2
-@include media(medium) {
-	.section2 {
-		@extend .section1;
-		background-color: $purple;
-	}   
-}
+
 // section 3
-@include media(medium) {
+@include media(medium-px) {
 	.section3 {
-		@extend .section1;
-		background-color: $green;
 		.phrases {
 			.section-heading1 {
 				letter-spacing: 0.4rem;
@@ -160,11 +159,5 @@
 		}
 	}   
 }
-// section 4
-@include media(medium) {
-	.section4 {
-		@extend .section1;
-		background-color: $violet;
-	}   
-}
+
 

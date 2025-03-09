@@ -10,8 +10,18 @@
             @content;
         }
     }
+    @if $breakpoint == small-px {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
     @if $breakpoint == medium {
         @media (min-width: 48rem) {
+            @content;
+        }
+    }
+    @if $breakpoint == medium-px {
+        @media (min-width: 768px) {
             @content;
         }
     }
@@ -20,6 +30,12 @@
             @content;
         }
     }
+    @if $breakpoint == x-large-px {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+
 
     @if $breakpoint == x-small-1 {
         @media (min-width: 386px) {
