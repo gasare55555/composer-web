@@ -18,3 +18,20 @@ $container-max-widths: (
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.g-albums {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 95px;
+}
+
+.pb-albums {
+  padding-bottom: 95px;
+}
+
+@media (min-width: 576px) {
+  .g-albums {
+    --bs-gutter-x: 95px;
+    --bs-gutter-y: 95px;
+  }
+}
+
