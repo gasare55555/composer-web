@@ -25,6 +25,16 @@
             @content;
         }
     }
+    @if $breakpoint == large {
+        @media (min-width: 62rem) {
+            @content;
+        }
+    }
+    @if $breakpoint == large-px {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
     @if $breakpoint == x-large {
         @media (min-width: 75rem) {
             @content;

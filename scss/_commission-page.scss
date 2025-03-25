@@ -1,311 +1,181 @@
 // commissions page main: mobile first
 .commission-main {
-    padding-bottom: 19.5rem;
-    background-color: $green;
-    .commission-heading-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 13.3rem 3.3rem;
-        .commission-heading { 
-            max-width: 59.7rem;
-            text-align: center;
-            letter-spacing: 0.5rem;
-            color: $white;
-        }
-    }
-    .commission-content-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 13.3rem;
-        margin-left: 3.6rem;
-        margin-right: 3.6rem;
-        .commission-picture-container{
-            display: none;
-        }
-        .commission-box {
-            box-sizing: border-box;
-            width: 32rem;
-            background: $white;
-            .commission-tier {
-                width: 32rem;
-                height: 15.2rem;
-                display: grid;
-                grid-template-areas: 
-                "heading heading heading"
-                "button1 button2 button3"
-                "label1 label2 label3"
-                "price1 price2 price3";
-                grid-template-rows: 41.44% 21.71% 13.81% 23.02%;
-                grid-template-columns: 1fr 1fr 1fr;
-                justify-content: space-around;
-                align-items: start;
-                padding: 0 1.5rem;
-                background-color: $blue;
-                border: 0.2rem solid black;
-                .tier-heading {
-                    grid-area: heading;
-                    align-self: center;
-                    line-height: 1.9rem;
-                    text-align: center;
-                    letter-spacing: 0.2rem;
-                    font-variant: small-caps;
-                    color: $white;
-                }
-                .radio-button1 {
-                    grid-area: button1;
-                    height: 2rem;
-                }
-                .starter-label {
-                    grid-area: label1;
-                    font-size: 1.333rem;
-                    line-height: 1.6rem;
-                    text-align: center;
-                    letter-spacing: 0.26rem;
-                    font-variant: small-caps;
-                    color: $white;
-                }
-                .starter-price {
-                    grid-area: price1;
-                    font-size: 1.333rem;
-                    line-height: 1.6rem;
-                    text-align: center;
-                    letter-spacing: 0.08rem;
-                    color: $white;
-                }
-                .radio-button2 {
-                    grid-area: button2;
-                    height: 2rem;
-                }
-                .standard-label {
-                    @extend .starter-label;
-                    grid-area: label2;   
-                }
-                .standard-price {
-                    @extend .starter-price;
-                    grid-area: price2;              
-                }
-                .radio-button3 {
-                    grid-area: button3;
-                    height: 2rem;
-                }
-                .advanced-label {
-                    @extend .starter-label;
-                    grid-area: label3;
-                }
-                .advanced-price{
-                    @extend .starter-price;
-                    grid-area: price3;
-                }
-            }
-            .commission-text{
-                position: relative;
-                width: 32rem;
-                padding-bottom: 5.7rem;
-                border: 0.2rem solid black;
-                .commission-text-titles{
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 5.5rem;
-                    margin-bottom: 1.7rem;
-                    margin-left: 2.487rem;
-                    gap: 1.7rem;
-                }
-                .commission-text-heading1{
-                    max-width: 28.679rem;
-                    height: 2.6rem;
-                    letter-spacing: 0.1rem;
-                    color: $blue;
-                }
-                .commission-text-subheading{
-                    max-width: 28rem;
-                    height: 5rem;
-                    letter-spacing: 0.1rem;
-                    color: $blue;
-                }
-                .commission-feature-box{
-                    display: grid;
-                    grid-template-rows: repeat(7, 1fr);
-                    grid-template-columns: 3fr 1fr;
-                    justify-content: space-between;
-                    grid-template-areas: 
-                    "a1 a2"
-                    "b1 b2"
-                    "c1 c2"
-                    "d1 d2"
-                    "e1 e2"
-                    "f1 f2"
-                    "g1 g2";
-                    margin-inline: 2.487rem;
-                    .commission-feature-box > * {
-                        height: 1.5rem;
-                    }
-                    .commission-text-feature1{
-                        grid-area: a1;
-                        letter-spacing: 0.09rem;
-                        color: $blue;
-                    }
-                    .commission-text-feature2{  
-                        @extend .commission-text-feature1;  
-                        grid-area: b1;                        
-                    }
-                    .commission-text-feature3{
-                        @extend .commission-text-feature1; 
-                        grid-area: c1;
-                    }
-                    .commission-text-feature4{
-                        @extend .commission-text-feature1; 
-                        grid-area: d1;
-                    }
-                    .commission-text-feature5{
-                        @extend .commission-text-feature1; 
-                        grid-area: e1;
-                    }
-                    .commission-text-feature6{
-                        @extend .commission-text-feature1; 
-                        grid-area: f1;
-                    }
-                    .commission-text-feature7{
-                        @extend .commission-text-feature1; 
-                        grid-area: g1;
-                    }
-                    .commission-text-value1{
-                        grid-area: a2;
-                        text-align: right;
-                        letter-spacing: 0.09rem;
-                        color: $blue;
-                    }
-                    .commission-text-value2{
-                        @extend .commission-text-value1;
-                        grid-area: b2;
-                    }
-                    .commission-text-value3{
-                        @extend .commission-text-value1;
-                        grid-area: c2;
-                    }
-                    .commission-text-value4{
-                        @extend .commission-text-value1;
-                        grid-area: d2;
-                    }
-                    .commission-text-value5{
-                        width: 1.626rem;
-                        grid-area: e2;
-                        justify-self: right;
-                    }
-                    .commission-text-value6{
-                        @extend .commission-text-value5;
-                        grid-area: f2;
-                    }
-                    .commission-text-value7{
-                        @extend .commission-text-value5;
-                        grid-area: g2;
-                    }
-                }
-                .commission-product-description{
-                    display: flex;
-                    flex-direction: column;
-                    margin-inline: 2.487rem;
-                    .commission-text-heading2{
-                        height: 2.6rem;
-                        margin-top: 3rem;
-                        letter-spacing: 0.1rem;
-                        color: $blue;
-                    }
-                    .commission-text-paragraph1{
-                        margin-top: 1.7rem;
-                        line-height: 1.9rem;
-                        text-align: justify;
-                        letter-spacing: 0.045rem;
-                        color: $blue;
-                    }
-                    .commission-text-paragraph2{
-                        @extend .commission-text-paragraph1;
-                        margin-top: 3.2rem;
-                    }
-                    .commission-text-extra1{
-                        margin-top: 0.9rem;
-                        line-height: 1.9rem;
-                        letter-spacing: 0.08rem;
-                        color: $blue;
-                    }
-                    .commission-text-extra2{
-                        @extend .commission-text-extra1;
-                        text-align: justify;
-                        letter-spacing: 0.045rem;
-
-                    }
-                    .commission-text-extra3{
-                        @extend .commission-text-extra1;
-                    }
-                    .commission-text-extra4{
-                        @extend .commission-text-extra1;
-                        letter-spacing: 0.045rem;
-                    }
-                }
-            }
-        }
-    }
+  max-width: 144rem;
+	padding-bottom: 19.5rem;
+	background-color: $green;
+	.commission-heading-container{
+		display: flex;
+		justify-content: center;
+		padding: 133px 33px;
+		.commission-heading { 
+			max-width: 597px;
+      font-size: 47.78px;
+			text-align: center;
+			letter-spacing: 4px;
+			color: $white;
+		}
+	}
+	.commission-content-container {
+		.commission-picture-container {
+			display: none;
+		}
+		.commission-box-container {
+      margin-inline: auto;
+			width: min(100vw, 32rem);
+			background: $white;
+			.commission-tier {
+				min-height: 15.2rem;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 41.44% 21.71% 13.81% 23.02%;
+				padding-inline: min(2.5vw, 1.5rem);
+				background-color: $blue;
+				border: 0.2rem solid black;
+				.tier-heading {
+					grid-column: span 3;
+					align-self: center;
+					text-align: center;
+					font-size: min(6.12vw, 1.6rem);
+					line-height: 1.9rem;
+					letter-spacing: 0.4rem;
+					font-variant: small-caps;
+					color: $white;
+				}
+				.tier-radio-button {
+					height: min(7.65vw, 2rem);
+				}
+				.tier-label {
+					font-size: min(5.1vw, 1.333rem);
+					line-height: 1.6rem;
+					text-align: center;
+					letter-spacing: 0.26rem;
+					font-variant: small-caps;
+					color: $white;
+				}
+				.tier-price {
+					font-size: min(5.1vw, 1.333rem);
+					line-height: 1.6rem;
+					text-align: center;
+					letter-spacing: 0.08rem;
+					color: $white;
+				}
+			}
+			.commission-text {
+				padding-block: 5.5rem 5.7rem;
+				padding-inline: min(8.5vw, 2.487rem);
+				color: $blue;
+				border: 0.2rem solid black;
+				.commission-text-titles {
+					display: flex;
+					flex-direction: column;
+					gap: 1.7rem;
+					margin-bottom: 1.7rem;
+					letter-spacing: 0.1rem;
+					.commission-text-heading {
+						max-width: 28.679rem;
+						min-height: 2.6rem;
+					}
+					.commission-text-subheading {
+						max-width: 28rem;
+						min-height: 5rem;
+					}
+				}
+				.commission-feature-section {
+					display: grid;
+					grid-template-columns: 3fr 1fr;
+					grid-template-rows: repeat(7, 1fr);
+					letter-spacing: 0.09rem;
+					& > * {
+						min-height: 1.5rem;
+					}
+					.commission-feature-value {
+						text-align: right;
+					}
+					.commission-feature-img {
+						width: 1.626rem;
+						justify-self: right;
+					}
+				}
+				.commission-product-description {
+					display: flex;
+					flex-direction: column;
+					.commission-description-heading {
+						min-height: 2.6rem;
+						margin-top: 3rem;
+						letter-spacing: 0.1rem;
+					}
+					.commission-description-paragraph1 {
+						margin-top: 1.7rem;
+						line-height: 1.9rem;
+						text-align: justify;
+						letter-spacing: 0.045rem;
+					}
+					.commission-description-paragraph2 {
+						@extend .commission-description-paragraph1;
+						margin-top: 3.2rem;
+					}
+					.commission-extras-heading {
+						margin-top: 0.9rem;
+						line-height: 1.9rem;
+						letter-spacing: 0.08rem;
+					}
+					.commission-extras-list {
+						@extend .commission-extras-heading;
+						letter-spacing: 0.045rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 // commissions page main: small breakpoint
-@include media(small) {
-    .commission-main {
-        .commission-heading-container {
-            .commission-heading { 
-                max-width: 59.7rem;
-                text-align: center;
-                letter-spacing: 0.5rem;
-                color: white;
-            }
-        }
-        .commission-content-container {
-            .commission-box{
-                width: 34.2rem;
-                .commission-tier {
-                    width: 34.2rem;
-                    padding: 0 2rem;
-                }
-                .commission-text {
-                    width: 34.2rem;
-                }
-            }           
-        }
-    }
+@include media(small-px) {
+	.commission-main {
+		.commission-heading-container {
+      padding: 13.3rem 3.3rem;
+			.commission-heading { 
+				max-width: 59.7rem;
+        font-size: 4.778rem;
+				letter-spacing: 0.5rem;
+			}
+		}
+		.commission-content-container {
+			.commission-box-container {
+				width: 34.2rem;
+			}           
+		}
+	}
 }
 
 // commissions page main: medium breakpoint
 @include media(medium) {
-    .commission-main {
-        .commission-content-container{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-left: 26.6rem;
-            margin-right: 26.6rem;
-            .commission-picture-container{
-                display: revert;
-                width: 31.6rem;
-                height: 72.4rem;
-                align-self: center;
-                overflow: hidden;
-                .commission-picture {
-                    width: auto;
-                    height: 100%;
-                    object-position: center;
-                }
-            }
-            .commission-box {
-                width: 42rem;
-                .commission-tier {
-                    width: 42rem;
-                    padding: 0 2.4rem;
-                }
-                .commission-text {
-                    width: 42rem;
-                }
-            }
-        }
+	.commission-main {
+		.commission-content-container {
+			display: flex;
+			justify-content: center;
+      align-items: center;
+      gap: 6%;
+			.commission-picture-container {
+				display: block;
+				width: 31.6rem;
+				height: 72.4rem;
+				overflow: hidden;
+				.commission-picture {
+					height: 100%;
+				}
+			}
+      .commission-box-container {
+				margin-inline: 0;
+			}  
+		}
+	}
+}
+
+@include media(large) {
+  .commission-main {
+		.commission-content-container {
+      gap: 8%;
     }
+  }
 }
