@@ -1,16 +1,17 @@
 // albums page main: mobile first
 .albums-main {
 	background-color: $purple;
-	padding-bottom: 238px;
+	padding-bottom: 225px;
 	padding-inline: 0;
 	.title-row {
 		.title-container {
 			padding-block: 133px;
 			.title {
 				font-size: 47.78px;
-				color: $white;
 				text-align: center;
 				letter-spacing: 9.5px;
+				color: $white;
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -77,7 +78,7 @@
 // albums page main: small breakpoint
 @include media(small-px) {
 	.albums-main {
-		padding-bottom: 23.8rem;
+		padding-bottom: 22.5rem;
 		.title-row {
 			.title-container {
 				padding-block: 13.3rem;

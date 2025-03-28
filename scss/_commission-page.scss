@@ -1,18 +1,19 @@
 // commissions page main: mobile first
 .commission-main {
   max-width: 144rem;
-	padding-bottom: 19.5rem;
+	padding-bottom: min(51.87vw, 16.6rem);
 	background-color: $green;
-	.commission-heading-container{
+	.commission-heading-container {
 		display: flex;
 		justify-content: center;
-		padding: 133px 33px;
+		padding-block: min(34.62vw, 13.3rem);
+		padding-inline: 33px;
 		.commission-heading { 
-			max-width: 597px;
-      font-size: 47.78px;
+      font-size: min(12.44vw, 4.778rem);
 			text-align: center;
-			letter-spacing: 4px;
+			letter-spacing: 0.5rem;
 			color: $white;
+			margin-bottom: 0;
 		}
 	}
 	.commission-content-container {
@@ -133,11 +134,8 @@
 @include media(small-px) {
 	.commission-main {
 		.commission-heading-container {
-      padding: 13.3rem 3.3rem;
 			.commission-heading { 
 				max-width: 59.7rem;
-        font-size: 4.778rem;
-				letter-spacing: 0.5rem;
 			}
 		}
 		.commission-content-container {
@@ -151,6 +149,7 @@
 // commissions page main: medium breakpoint
 @include media(medium) {
 	.commission-main {
+		padding-bottom: 22.5rem;
 		.commission-content-container {
 			display: flex;
 			justify-content: center;

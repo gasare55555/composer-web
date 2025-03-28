@@ -1,97 +1,80 @@
 // about page main: mobile first
 .about-main {
-    padding-bottom: 19.5rem;
-    background-color: $violet;
-    .about-title-container{
-        padding: 13.3rem 3.3rem;
-        .about-heading {
-            text-align: center;
-            letter-spacing: 1.2rem;
-            color: white;
-        }
-    }
-    .about-content{
-        display: flex;
-        flex-direction: column;
-        gap: 13.3rem;  
-        .about-text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.9rem;
-            .about-text1 {
-                width: 20.9rem;
-                height: 20.9rem;
-                line-height: 1.9rem;
-                text-align: justify;
-                letter-spacing: 0.17rem;
-                color: white;
-            }
-            .about-text2 {
-                width: 20.9rem;
-                height: 30.4rem;
-                line-height: 1.9rem;
-                text-align: justify;
-                letter-spacing: 0.12rem;
-                color: white;
-            }
-        }
-        .about-pictures{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 5.947rem;
-            .about-picture1 {
-                width: 32rem;
-                height: 17.942rem;
-            }
-            .about-picture2 {
-                display: none;
-            }
-            .about-picture3 {
-                display: none;
-            }
-        }
-    }
+  max-width: 144rem;
+	padding-bottom: min(51.87vw, 16.6rem);
+	background-color: $violet;
+	.about-heading-container{
+		padding-block: min(41.56vw, 13.3rem);
+		padding-inline: 33px;
+		.about-heading {
+			font-size: min(14.93vw, 4.778rem);
+			text-align: center;
+			letter-spacing: 1.2rem;
+			color: white;
+			margin-bottom: 0;
+		}
+	}
+	.about-content-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: min(41.56vw, 13.3rem);
+		.about-text-container {
+			display: flex;
+			flex-direction: column;
+			gap: 1.9rem;
+			width: min(68vw, 20.9rem);
+			.about-text1 {
+				line-height: 1.9rem;
+				text-align: justify;
+				letter-spacing: 0.17rem;
+				color: white;
+			}
+			.about-text2 {
+        @extend .about-text1;
+				letter-spacing: 0.12rem;
+			}
+		}
+		.about-picture-container {
+			display: flex;
+			flex-direction: column;
+			gap: 5.947rem;
+			.about-picture1 {
+				width: min(100vw, 27rem);
+				height: min(55.857vw, 15.08rem);
+			}
+			.about-picture2, .about-picture3 {
+        @extend .about-picture1;
+				display: none;
+			}
+		}
+	}
 }
 
 // about page main: medium breakpoint
 @include media(medium) {
-    .about-main {
-        .about-content{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-left: 36.1rem;
-            margin-right: 28.5rem;
-            .about-text{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 1.9rem;
-            }
-            .about-pictures{
-                display: flex;
-                flex-direction: column;
-                gap: 5.947rem;
-                .about-picture1 {
-                    width: 44.901rem;
-                    height: 25.176rem;
-                }
-                .about-picture2 {
-                    display: revert;
-                    width: 44.901rem;
-                    height: 25.176rem;
-                    background-color: hsl(0, 10%, 2%);
-                }
-                .about-picture3 {
-                    display: revert;
-                    width: 44.901rem;
-                    height: 25.176rem;
-                }
-            }
-        }
-    }
+	.about-main {
+		padding-bottom: 22.5rem;
+		.about-content-container {
+			flex-direction: row;
+			justify-content: center;
+      gap: min(9.23vw, 13.3rem);
+			margin-left: min(5.27vw, 7.6rem);
+			.about-picture-container {
+				.about-picture1 {
+					width: min(45vw, 44.901rem);
+					height: min(25.23vw, 25.176rem);
+				}
+				.about-picture2 {
+					display: revert;
+					background-color: hsl(0, 10%, 2%);
+				}
+				.about-picture3 {
+					display: revert;
+				}
+			}
+		}
+	}
 }
 
 
