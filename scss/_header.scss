@@ -4,13 +4,12 @@ header {
 	background-color: $white;
 	border: solid 0.25rem $border;
 	color: $blue;
-	.navbar{
+	.navbar {
 		padding: 0;
 		.container-fluid {
-			padding-block: 10px;
+			padding-block: 1rem;
 			padding-inline: 10px;
-			margin-left: 10px;
-			margin-right: 10px;
+			margin-inline: 10px;
 			.navbar-brand {
 				margin-right: 0;
 				.logo {
@@ -19,7 +18,7 @@ header {
 			}
 			.name {
 				font-size: 27.65px;
-				margin: 0 0 0 -4px;
+				margin: 0 0 0 -6px;
 			}
 			.navbar-toggler {
 				display: grid;
@@ -73,7 +72,6 @@ header {
 	header {
 		.navbar{
 			.container-fluid {
-				padding-block: 1rem;
 				.navbar-brand {
 					.logo {
 						height: 5.2rem;
@@ -97,6 +95,17 @@ header {
 	}
 }
 
+@include media(small) {
+	header {
+		.navbar {
+			.container-fluid {
+				padding-inline: 1rem;
+				margin-inline: 1rem;
+			}
+		}
+	}
+}
+
 @include media(medium) {
 	header {
 		padding-block: 0.8rem;
@@ -106,13 +115,14 @@ header {
 // header for large sizes
 @include media(x-large) {
 	header {
-		height: 12rem;
+		max-height: 12rem;
+		padding-block: 0;
 		.navbar{
 			height: 100%;
 			.container-fluid {
-				padding: 0;
-				margin-left: 0;
-				margin-right: 0;
+				padding-block: 0;
+				padding-inline: 0;
+				margin-inline: 0;
 				.navbar-brand {
 					margin-left: 3.125%;
 					.logo {
@@ -120,7 +130,7 @@ header {
 					}
 				}
 				.name {
-					padding-left: max(36rem, 25%);
+					padding-left: 41.5rem;
           padding-right: 8rem;
 					font-size: 3.981rem;
 				}
@@ -133,11 +143,10 @@ header {
 					.navbar-nav {
 						justify-content: end;
             flex-wrap: wrap;
+						letter-spacing: 0.1rem;
             row-gap: 0;
 						.nav-item {
 							margin-right: 0.85rem;
-							font-size: $size-p;    
-							letter-spacing: 0.05rem;
               .nav-link {
                 padding-block: 0;
               }
