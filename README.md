@@ -49,7 +49,14 @@ A responsive and accessible portfolio site for a music composer, designed to sho
 
 ---
 
-> ⚙️ This project **intentionally avoids frameworks, builders, and npm-based workflows** in the main logic to showcase a manual, alternative approach to customizing libraries like Bootstrap using Sass. It uses the **Live Sass Compiler** extension in VS Code for compiling `.scss` files and demonstrates strong understanding of folder structure, SCSS imports, internal linking across multiple HTML pages, and how everything integrates in deployment.
+> ⚙️ This project **intentionally avoids frameworks, builders, and build pipelines like Webpack or Vite** to showcase a manual, alternative approach to front-end development. Bootstrap library is customized directly using Sass, and the project uses the **Live Sass Compiler** extension in VS Code to generate the final CSS files. This setup demonstrates clear understanding of:
+> 
+> - Folder structure
+> - SCSS importing and modularization
+> - Internal linking between multiple HTML pages
+> - Deployment structure and file organization  
+> 
+> ✅ This approach is especially useful for **hosting services that don’t support Node.js or npm** (like GitHub Pages), making it ready to deploy without extra build steps.
 
 ---
 
