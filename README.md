@@ -49,20 +49,20 @@ A responsive and accessible portfolio site for a music composer, designed to sho
 
 ---
 
-> ⚙️ This project **intentionally avoids frameworks, builders, and build pipelines like Webpack or Vite** to showcase a manual, alternative approach to front-end development. Bootstrap library is customized directly using Sass, and the project uses the **Live Sass Compiler** extension in VS Code to generate the final CSS files. This setup demonstrates clear understanding of:
+> ⚙️ This project **intentionally avoids JavaScript frameworks, builders, and build pipelines like Webpack or Vite** to showcase a manual, alternative approach to front-end development. Bootstrap library is customized directly using Sass, and the project uses the **Live Sass Compiler** extension in VS Code to generate the final CSS files. This setup demonstrates clear understanding of:
 > 
 > - Folder structure
 > - SCSS importing and modularization
 > - Internal linking between multiple HTML pages
 > - Deployment structure and file organization  
 > 
-> ✅ This approach is especially useful for **hosting services that don’t support Node.js or npm** (like GitHub Pages), making it ready to deploy without extra build steps.
+> ✅ This approach is suitable for **hosting services like GitHub Pages that don’t support build tools such as Vite or Webpack, nor environments like Node.js —** delivering deploy‑ready static output with zero extra build steps.
 
 ---
 
 ## 🎨 Design Highlights
 
-- Accessible font sizes (handles browser zoom & font size configuration)
+- Accessible font sizes (handles browser zoom and user font-size settings while maintaining layout integrity and responsiveness)
 - Mobile-first, responsive down to 320px
 - Custom Bootstrap breakpoints and container widths defined through Sass (`rem` units)
 - Artistic and clean visual style with consistent spacing
@@ -88,7 +88,7 @@ Or use **Live Sass Compiler** in VS Code.
 - `<lite-youtube>` for fast, performant video embeds
 - Optimized assets and lightweight SCSS output
 - Semantic HTML for screen readers
-- SEO-ready meta tags: `description`, `keywords`
+- SEO-ready: meta tags (`description`, `keywords`) and a clear `h1–h6` heading hierarchy to enhance search engine indexing.
 
 ---
 
